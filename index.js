@@ -1,4 +1,4 @@
-const value = true;
+// const value = true;
 
 // const promise1 = new Promise((resolve, reject) => {
 //   setTimeout(() => {
@@ -46,30 +46,30 @@ const value = true;
 
 // async await
 
-const indicator = false;
-const promise = () => {
-  const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (indicator) {
-        resolve('data 1');
-      } else {
-        reject({
-          message: 'not found',
-          status: 404,
-        });
-      }
-    }, 3000);
-  });
-  return promise;
-};
+// const indicator = false;
+// const promise = () => {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (indicator) {
+//         resolve('data 1');
+//       } else {
+//         reject({
+//           message: 'not found',
+//           status: 404,
+//         });
+//       }
+//     }, 3000);
+//   });
+//   return promise;
+// };
 
-const funcWaiter = async () => {
-  try {
-    const data = await promise();
-    console.log(data);
-  } catch (err) {
-    console.log('error message: ', err.message);
-  }
-};
+// const funcWaiter = async () => {
+//   try {
+//     const data = await promise();
+//     console.log(data);
+//   } catch (err) {
+//     console.log('error message: ', err.message);
+//   }
+// };
 
-funcWaiter();
+// funcWaiter();
